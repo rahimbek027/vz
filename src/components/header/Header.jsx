@@ -39,13 +39,9 @@ const Header = () => {
       <div className="container mx-auto ">
         <nav className="navbar py-5 flex items-center justify-between">
           <div className="navbar__logo">
-            <p className="logo_name">QPICK</p>
+            <p className="logo_name">Magazine</p>
           </div>
-          <div className="flex">
-              <RiSmartphoneLine  className="w-5 h-6"/>
-              <p>Выбрать бренд телефона</p>
-              <FaAngleDown  className="mt-[6px]"/>
-          </div>
+       
           <div className="div">
             <div className="relative hidden sm:block">
               <div className="flex items-center w-[210px] bg-[#fff] rounded-lg mr-5">
@@ -68,9 +64,12 @@ const Header = () => {
                   searchFocus ? "" : "hidden"
                 }`}
               >
-                <ul className="flex flex-col gap-4 ml-1 text-[13px] ">
-                  {searchRes?.products?.map((product) => product.title)}
+                <ul className="flex flex-col gap-4 ml-1 text-[13px]">
+                {searchRes?.products?.map((product) => (
+               <li key={product.id}>{product.title}</li> 
+                ))}
                 </ul>
+
               </div>
             </div>
           </div>

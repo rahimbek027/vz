@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='container mx-auto px-4'>
             <div className="flex flex-col md:flex-row gap-12 footer">
             <div className="navbar__logo">
-            <p className="logo_name">QPICK</p>
+            <p className="logo_name">Magazine</p>
           </div>
                 <ul className="footer__collection w-full md:w-1/4 leading-normal flex flex-col gap-3 text3 ml-52 -mt-10">
                     <p className='font-semibold'>Избранное</p>
