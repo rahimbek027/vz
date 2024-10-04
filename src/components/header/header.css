@@ -1,0 +1,52 @@
+.navbar__menu{
+    display: none;
+}
+
+.logo_name{
+width: 85px;
+height: 30px;
+font-family: Montserrat;
+font-size: 25px;
+font-weight: 700;
+line-height: 30.48px;
+text-align: left;
+color:#101010;
+margin-left: 20px;
+}
+
+@media (max-width:990px) {
+    .nav__collect {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #afa5a5b0;
+        width: 60%;
+        padding: 20px;
+        height: 100%;
+        transition: .6s;
+        z-index: 101;
+
+    }
+
+    .nav__collect.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar__collection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #fff;
+        align-items: center;
+    }
+
+    .navbar__menu {
+        display: block;
+    }
+    .navbar__number{
+        display: none;
+    }
+}

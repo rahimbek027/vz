@@ -1,0 +1,42 @@
+.desc::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 8px;
+    left: -12px;
+    border-radius: 50%;
+    background: #FF9900;
+}
+
+.hero__box {
+    border-radius: 75px;
+    width: 40%;
+}
+
+.desc {
+    position: relative;
+    margin-left: 12px;
+}
+
+@media (max-width:990px) {
+    .hero__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__box {
+        width: 100%;
+    }
+
+    .hero__img {
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+  
+    .hero{
+        width: 370px;
+        margin: auto;
+    }
+}

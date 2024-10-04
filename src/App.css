@@ -1,0 +1,7 @@
+@media (max-width:620px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,9 @@
+@media (max-width:620px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-start;
+    }
+
+}
